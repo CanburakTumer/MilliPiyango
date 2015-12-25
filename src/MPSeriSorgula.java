@@ -18,11 +18,15 @@ public class MPSeriSorgula {
 
 	public static void main(String[] args) {
 		sonuclarMap = new HashMap<String, String>();
-		int ilkBiletNo = 1234501;
-		int sonBiletNo = 1234600;
-		String cekilisTarihi = "20141231"; // YYYYMMDD formatýnda
+		/*
+		 * Bilet No yýlbaþý çekiliþleri için 7 hane
+		 * diðer çekiliþler için 6 hane olmalýdýr.
+		 */
+		int ilkBiletNo = 123401;
+		int sonBiletNo = 123500;
+		String cekilisTarihi = "20151009"; // YYYYMMDD formatýnda
 		
-		//downloadCekilisSonucu(cekilisTarihi);
+		downloadCekilisSonucu(cekilisTarihi);
 		mapSonuclarToHashMap(cekilisTarihi);
 		String ikramiye = ikramiyeBul(ilkBiletNo, sonBiletNo);
 		
