@@ -18,8 +18,8 @@ public class MPSeriSorgula {
 
 	public static void main(String[] args) {
 		sonuclarMap = new HashMap<String, String>();
-		int ilkBiletNo = 1234500;
-		int sonBiletNo = 1234599;
+		int ilkBiletNo = 1234501;
+		int sonBiletNo = 1234600;
 		String cekilisTarihi = "20141231"; // YYYYMMDD formatýnda
 		
 		//downloadCekilisSonucu(cekilisTarihi);
@@ -77,7 +77,7 @@ public class MPSeriSorgula {
 				if(tuttu != null)
 						enBuyukIkramiye = biletNo+"\t"+tuttu+"\n";
 			}
-			if(enBuyukIkramiye == "") enBuyukIkramiye = biletNo+"\tBABA\n";
+			if(enBuyukIkramiye == "") enBuyukIkramiye = biletNo+"\0\n";
 			ikramiye += enBuyukIkramiye;
 		}
 		
