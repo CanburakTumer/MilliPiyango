@@ -46,3 +46,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 /bin
+
+# Directory created when code runs
+/piyango
+/sonuclar
