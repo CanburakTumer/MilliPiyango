@@ -4,5 +4,5 @@ python /home/pi/Desktop/sayisal/pythons/trimResults.py
 $NOW =$(date +"%Y%m%d")
 echo $NOW
 git add .
-git commit -m '$NOW'
+git commit -m '(date +"%Y%m%d")'
 git push
