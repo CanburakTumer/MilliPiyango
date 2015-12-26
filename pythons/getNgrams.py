@@ -9,7 +9,7 @@ fourgrams = {}
 fivegrams = {}
 sixgrams = {}
 
-print "Opening file..."
+#print "Opening file..."
 with open("sonuclarTrimmed/trimmed.txt") as trimmed:
 	for line in trimmed:
 		splitted = line.split()
@@ -79,7 +79,7 @@ with open("sonuclarTrimmed/trimmed.txt") as trimmed:
                                 sixgrams[sixgram] = 1
                 sortedsixgrams = sorted(sixgrams.items(), key=itemgetter(1))
 
-print "Preparing finalString"
+#print "Preparing finalString"
 for num in range(0,4):
         print(sortedUnigrams[num])
         print(sortedUnigrams[48-num])
@@ -92,4 +92,4 @@ for num in range(0,4):
         print(sortedfivegrams[num])
         print(sortedfivegrams[len(sortedfivegrams)-1-num])                         
 
-print "Program complete"
+#print "Program complete"

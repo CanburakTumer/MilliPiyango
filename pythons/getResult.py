@@ -19,9 +19,12 @@ os.system("rm -rf sonuclar")
 os.system("mkdir sonuclar")
 os.system("chmod -R 777 sonuclar")
 
+print "Starting to fetch..."
 while today>startDate:
 	fileName = startDate.strftime(dateFormat)
-	print fileName + "started..."
+#	print fileName + "started..."
 	ll.urlretrieve(fileUrl+fileName+fileExtension, localUrl+fileName+fileExtension)
-	print fileName + "completed..."
+#	print fileName + "completed..."
 	startDate = startDate + datetime.timedelta(days=7)
+
+print "Fetch ended"

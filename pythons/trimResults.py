@@ -10,6 +10,7 @@ fileList = os.listdir("sonuclar")
 #fileList = glob.glob("sonuclar/*.json")
 #print fileList
 
+print "Starting to trim..."
 finalString = ""
 for file in fileList:
 	f = open("sonuclar/"+file, "r")
@@ -26,4 +27,5 @@ for file in fileList:
 f = open("sonuclarTrimmed/trimmed.txt","w")
 f.write(finalString)
 f.close()
+print "Trim ended."
 
